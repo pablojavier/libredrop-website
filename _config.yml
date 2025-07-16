@@ -1,0 +1,93 @@
+# Site settings
+title: "LibreDrop"
+description: "Privacy-first cross-platform file sharing"
+baseurl: ""
+url: "https://libredrop.org"
+lang: en
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# LibreDrop specific
+github_username: pablojavier
+repository: pablojavier/libredrop
+latest_version: "1.0.0"
+download_base_url: "https://github.com/pablojavier/libredrop/releases"
+
+# SEO
+author:
+  name: "LibreDrop Team"
+  email: "hello@libredrop.org"
+
+social:
+  name: LibreDrop
+  links:
+    - https://github.com/pablojavier/libredrop
+    - https://twitter.com/LibreDropApp
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "_docs"
+      type: "docs"
+    values:
+      layout: "page"
+
+# Exclude from processing
+exclude:
+  - setup_site.sh
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Multilingual settings
+languages: ["en", "es", "pt"]
+default_lang: "en"
+exclude_from_localizations: ["assets", "css", "js"]
+
+# Language-specific settings
+t:
+  en:
+    site_title: "LibreDrop"
+    site_description: "Privacy-first cross-platform file sharing"
+    nav_download: "Download"
+    nav_privacy: "Privacy"
+    nav_contribute: "Contribute"
+    nav_docs: "Docs"
+    lang_switcher: "Language"
+  es:
+    site_title: "LibreDrop"
+    site_description: "Compartir archivos multiplataforma con privacidad"
+    nav_download: "Descargar"
+    nav_privacy: "Privacidad"
+    nav_contribute: "Contribuir"
+    nav_docs: "Documentación"
+    lang_switcher: "Idioma"
+  pt:
+    site_title: "LibreDrop"
+    site_description: "Compartilhamento de arquivos multiplataforma com privacidade"
+    nav_download: "Baixar"
+    nav_privacy: "Privacidade"
+    nav_contribute: "Contribuir"
+    nav_docs: "Documentação"
+    lang_switcher: "Idioma"

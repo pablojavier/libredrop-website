@@ -1,0 +1,56 @@
+platforms:
+  - name: Android
+    icon: 🤖
+    requirements: "Android 5.0+ (API 21+)"
+    primary:
+      name: "APK Direct"
+      url: "/download/android.apk"
+    alternatives:
+      - name: "Google Play Store"
+        url: "#"
+        coming_soon: true
+      - name: "F-Droid"
+        url: "#" 
+        coming_soon: true
+        
+  - name: Windows  
+    icon: 🪟
+    requirements: "Windows 10+ (64-bit)"
+    primary:
+      name: "EXE Installer"
+      url: "/download/windows.exe"
+    alternatives:
+      - name: "Microsoft Store"
+        url: "#"
+        coming_soon: true
+      - name: "Chocolatey"
+        url: "#"
+        coming_soon: true
+        
+  - name: macOS
+    icon: 🍎  
+    requirements: "macOS 10.14+ (Mojave)"
+    primary:
+      name: "DMG Package"
+      url: "/download/macos.dmg"
+    alternatives:
+      - name: "Mac App Store"
+        url: "#"
+        coming_soon: true
+      - name: "Homebrew"
+        url: "#"
+        coming_soon: true
+        
+  - name: Linux
+    icon: 🐧
+    requirements: "Most distributions"  
+    primary:
+      name: "AppImage"
+      url: "/download/linux.AppImage"
+    alternatives:
+      - name: "Snap Store"
+        url: "#"
+        coming_soon: true
+      - name: "Flathub"
+        url: "#"
+        coming_soon: true

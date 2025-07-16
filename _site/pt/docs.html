@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Documentação - LibreDrop</title>
+  <meta name="description" content="Guia completo para usar e entender LibreDrop">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="canonical" href="https://libredrop.org/pt/docs.html">
+  
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Documentação | LibreDrop</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Documentação" />
+<meta name="author" content="LibreDrop Team" />
+<meta property="og:locale" content="pt" />
+<meta name="description" content="Guia completo para usar e entender LibreDrop" />
+<meta property="og:description" content="Guia completo para usar e entender LibreDrop" />
+<link rel="canonical" href="https://libredrop.org/pt/docs.html" />
+<meta property="og:url" content="https://libredrop.org/pt/docs.html" />
+<meta property="og:site_name" content="LibreDrop" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Documentação" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"LibreDrop Team"},"description":"Guia completo para usar e entender LibreDrop","headline":"Documentação","url":"https://libredrop.org/pt/docs.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link type="application/atom+xml" rel="alternate" href="https://libredrop.org/feed.xml" title="LibreDrop" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Documentação - LibreDrop">
+  <meta property="og:description" content="Guia completo para usar e entender LibreDrop">
+  <meta property="og:image" content="https://libredrop.org/assets/images/libredrop-og.png">
+  <meta property="og:url" content="https://libredrop.org/pt/docs.html">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">
+      <img src="/assets/images/logo.png" alt="LibreDrop" class="logo">
+      LibreDrop
+    </a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        
+        
+          <a class="page-link" href="/pt/download">Baixar</a>
+          <a class="page-link" href="/pt/privacy">Privacidade</a>
+          <a class="page-link" href="/pt/contribute">Contribuir</a>
+          <a class="page-link" href="/pt/docs">Documentação</a>
+        
+        <a class="page-link" href="pablojavier/libredrop">GitHub</a>
+        
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+          <select onchange="switchLanguage(this.value)" id="language-select">
+            <option value="en" >🇺🇸 EN</option>
+            <option value="es" >🇪🇸 ES</option>
+            <option value="pt" selected>🇧🇷 PT</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+function switchLanguage(lang) {
+  const currentPath = window.location.pathname;
+  let newPath;
+  
+  if (lang === 'en') {
+    // Remove language prefix for English
+    newPath = currentPath.replace(/^\/(es|pt)/, '') || '/';
+  } else {
+    // Add or replace language prefix
+    if (currentPath.startsWith('/es') || currentPath.startsWith('/pt')) {
+      newPath = currentPath.replace(/^\/(es|pt)/, '/' + lang);
+    } else {
+      newPath = '/' + lang + currentPath;
+    }
+  }
+  
+  window.location.href = newPath;
+}
+</script>
+
+  
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Documentação</h1>
+    
+      <p class="post-description">Guia completo para usar e entender LibreDrop</p>
+    
+  </header>
+
+  <div class="post-content">
+    <h1 id="documentação-libredrop">Documentação LibreDrop</h1>
+
+<h2 id="início-rápido">Início Rápido</h2>
+
+<h3 id="instalação">Instalação</h3>
+<ol>
+  <li><a href="/pt/download">Baixe LibreDrop</a> para sua plataforma</li>
+  <li>Instale seguindo instruções específicas da plataforma</li>
+  <li>Inicie a aplicação</li>
+</ol>
+
+<h3 id="primeira-transferência">Primeira Transferência</h3>
+<ol>
+  <li><strong>Conecte dispositivos</strong> à mesma rede Wi-Fi</li>
+  <li><strong>Abra LibreDrop</strong> em ambos os dispositivos</li>
+  <li><strong>Selecione arquivos</strong> no dispositivo remetente</li>
+  <li><strong>Escolha destinatário</strong> dos dispositivos descobertos</li>
+  <li><strong>Confirme transferência</strong> no dispositivo receptor</li>
+  <li><strong>Aguarde conclusão</strong> - arquivos salvos na pasta Downloads</li>
+</ol>
+
+<h2 id="guia-do-usuário">Guia do Usuário</h2>
+
+<h3 id="descoberta-de-dispositivos">Descoberta de Dispositivos</h3>
+<p>LibreDrop descobre automaticamente outros dispositivos LibreDrop na sua rede local usando:</p>
+<ul>
+  <li><strong>UDP Broadcast</strong>: Dispositivos anunciam sua presença</li>
+  <li><strong>mDNS/Bonjour</strong>: Protocolo de descoberta de serviços</li>
+  <li><strong>Entrada Manual de IP</strong>: Conecte diretamente se auto-descoberta falhar</li>
+</ul>
+
+<h3 id="processo-de-transferência-de-arquivos">Processo de Transferência de Arquivos</h3>
+<ol>
+  <li><strong>Seleção de Arquivos</strong>: Escolha arquivos usando seletor de arquivos da plataforma</li>
+  <li><strong>Seleção de Destinatário</strong>: Escolha dispositivo alvo da lista</li>
+  <li><strong>Iniciação de Transferência</strong>: Conexão WebRTC estabelecida</li>
+  <li><strong>Monitoramento de Progresso</strong>: Exibição em tempo real de progresso e velocidade</li>
+  <li><strong>Conclusão</strong>: Arquivos salvos na pasta designada</li>
+</ol>
+
+<h3 id="configurações">Configurações</h3>
+
+<h4 id="pasta-de-transferência">Pasta de Transferência</h4>
+<ul>
+  <li><strong>Padrão</strong>: Pasta Downloads</li>
+  <li><strong>Personalizada</strong>: Escolha qualquer pasta acessível</li>
+  <li><strong>Persistência</strong>: Configuração salva entre sessões</li>
+</ul>
+
+<h4 id="interface-de-rede">Interface de Rede</h4>
+<ul>
+  <li><strong>Automática</strong>: Deixe LibreDrop escolher melhor interface</li>
+  <li><strong>Manual</strong>: Selecione adaptador de rede específico</li>
+  <li><strong>Múltiplas Redes</strong>: Especifique redes preferidas</li>
+</ul>
+
+<h4 id="opções-de-privacidade">Opções de Privacidade</h4>
+<ul>
+  <li><strong>Nome do Dispositivo</strong>: Como seu dispositivo aparece para outros</li>
+  <li><strong>Auto-Aceitar</strong>: Aceita automaticamente transferências recebidas</li>
+  <li><strong>Notificações</strong>: Alertas de conclusão de transferência</li>
+</ul>
+
+<h2 id="solução-de-problemas">Solução de Problemas</h2>
+
+<h3 id="problemas-comuns">Problemas Comuns</h3>
+
+<h4 id="nenhum-dispositivo-encontrado">“Nenhum dispositivo encontrado”</h4>
+<p><strong>Causas:</strong></p>
+<ul>
+  <li>Dispositivos em redes diferentes</li>
+  <li>Firewall bloqueando portas UDP</li>
+  <li>Isolamento Wi-Fi habilitado</li>
+</ul>
+
+<p><strong>Soluções:</strong></p>
+<ol>
+  <li>Verifique se ambos dispositivos estão na mesma rede Wi-Fi</li>
+  <li>Verifique configurações de firewall (permita LibreDrop)</li>
+  <li>Desabilite isolamento Wi-Fi nas configurações do roteador</li>
+  <li>Tente conexão manual por IP</li>
+</ol>
+
+<h4 id="transferência-falhou">“Transferência falhou”</h4>
+<p><strong>Causas:</strong></p>
+<ul>
+  <li>Interrupção de rede</li>
+  <li>Espaço de armazenamento insuficiente</li>
+  <li>Problemas de permissões de arquivo</li>
+</ul>
+
+<p><strong>Soluções:</strong></p>
+<ol>
+  <li>Garanta conexão de rede estável</li>
+  <li>Verifique espaço de armazenamento disponível</li>
+  <li>Verifique permissões de escrita da pasta</li>
+  <li>Reinicie transferência</li>
+</ol>
+
+<h2 id="detalhes-técnicos">Detalhes Técnicos</h2>
+
+<h3 id="protocolos-de-rede">Protocolos de Rede</h3>
+<ul>
+  <li><strong>Descoberta</strong>: UDP broadcast na porta 7777</li>
+  <li><strong>Transferência</strong>: Canais de dados WebRTC</li>
+  <li><strong>Sinalização</strong>: HTTP em porta aleatória</li>
+  <li><strong>Criptografia</strong>: DTLS (padrão WebRTC)</li>
+</ul>
+
+<h3 id="modelo-de-segurança">Modelo de Segurança</h3>
+<ul>
+  <li><strong>Apenas Rede Local</strong>: Sem tráfego de internet</li>
+  <li><strong>Sem Servidor Central</strong>: Direto peer-to-peer</li>
+  <li><strong>Conexões Efêmeras</strong>: Sem conexões persistentes</li>
+  <li><strong>Sem Log de Dados</strong>: Zero registros de transferência</li>
+</ul>
+
+<hr />
+
+<p><em>LibreDrop é desenvolvido por voluntários comprometidos com privacidade digital e liberdade. Seu apoio ajuda a manter o projeto vivo.</em></p>
+
+  </div>
+</article>
+
+    </div>
+  </main>
+  
+  <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>LibreDrop</h3>
+        <p>Privacy-first file sharing for everyone.</p>
+        <p class="license">Licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a></p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Links</h3>
+        <ul class="footer-links">
+          <li><a href="/download">Download</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/contribute">Contribute</a></li>
+          <li><a href="/docs">Documentation</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Community</h3>
+        <ul class="footer-links">
+          <li><a href="pablojavier/libredrop">GitHub</a></li>
+          <li><a href="pablojavier/libredrop/issues">Report Issues</a></li>
+          <li><a href="pablojavier/libredrop/discussions">Discussions</a></li>
+          <li><a href="mailto:hello@libredrop.org">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 LibreDrop. Made with ❤️ for the libre software community.</p>
+    </div>
+  </div>
+</footer>
+
+  
+  <!-- Platform detection script -->
+  <script src="/assets/js/platform-detect.js"></script>
+</body>
+</html>
