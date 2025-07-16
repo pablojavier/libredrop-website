@@ -39,7 +39,7 @@ if [[ -n $(git status --porcelain) ]]; then
 - Responsive language selector with flags"
 
     echo "🚀 Pushing to GitHub..."
-    git push origin main
+    git push origin master
     
     if [ $? -eq 0 ]; then
         echo "✅ Successfully pushed to GitHub!"
